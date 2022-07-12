@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qf.mapper.OrderMapper">
+
+    <resultMap id="BaseResultMap" type="com.qf.entity.Order">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="openid" column="openid" jdbcType="VARCHAR"/>
+            <result property="proname" column="proname" jdbcType="VARCHAR"/>
+            <result property="makedate" column="makedate" jdbcType="TIMESTAMP"/>
+            <result property="username" column="username" jdbcType="VARCHAR"/>
+            <result property="orderstate" column="orderstate" jdbcType="VARCHAR"/>
+            <result property="placedate" column="placedate" jdbcType="TIMESTAMP"/>
+            <result property="usertell" column="usertell" jdbcType="VARCHAR"/>
+            <result property="information" column="information" jdbcType="VARCHAR"/>
+            <result property="busid" column="busid" jdbcType="BIGINT"/>
+            <result property="proid" column="proid" jdbcType="BIGINT"/>
+            <result property="tecid" column="tecid" jdbcType="BIGINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,openid,proname,
+        makedate,username,orderstate,
+        placedate,usertell,information,
+        busid,proid,tecid
+    </sql>
+</mapper>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qf.mapper.BusinessMapper">
+
+    <resultMap id="BaseResultMap" type="com.qf.entity.Business">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="busname" column="busname" jdbcType="VARCHAR"/>
+            <result property="busaddress" column="busaddress" jdbcType="VARCHAR"/>
+            <result property="busexplain" column="busexplain" jdbcType="VARCHAR"/>
+            <result property="bustell" column="bustell" jdbcType="VARCHAR"/>
+            <result property="servertime" column="servertime" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,busname,busaddress,
+        busexplain,bustell,servertime
+    </sql>
+</mapper>

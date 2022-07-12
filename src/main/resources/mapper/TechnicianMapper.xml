@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qf.mapper.TechnicianMapper">
+
+    <resultMap id="BaseResultMap" type="com.qf.entity.Technician">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="techexplain" column="techexplain" jdbcType="VARCHAR"/>
+            <result property="techname" column="techname" jdbcType="VARCHAR"/>
+            <result property="busid" column="busid" jdbcType="BIGINT"/>
+            <result property="imageurl" column="imageurl" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,techexplain,techname,
+        busid,imageurl
+    </sql>
+</mapper>
